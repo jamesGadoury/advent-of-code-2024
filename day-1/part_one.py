@@ -9,6 +9,7 @@ def get_input(input_pth):
             list2.append(int(i2))
     return list1, list2
 
+
 def compute_total_distance(list1, list2):
     assert len(list1) == len(list2)
     
@@ -23,3 +24,10 @@ def compute_total_distance(list1, list2):
 def test_sample():
     assert compute_total_distance(*get_input("sample_input.txt")) == 11
 
+
+def main():
+    print(compute_total_distance(*get_input("input.txt")))
+
+
+if __name__ == "__main__":
+    main()
